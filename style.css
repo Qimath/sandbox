@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #FFFDF9;
+    color:#202124;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+header {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    color:#202124;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+
+header img {
+    width: 3rem;
+}
+
+
+
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    font-size: 0.8rem;
+    background-color: #202124;
+    color:#FFFDF9;
+}
+
+
+
+content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+content .sdk-wrap {
+    margin-bottom: 1rem;
+}
+
+content .sdk-wrap label {
+    display:block;
+    font-size: 0.8rem;
+}
+
+content .sdk-wrap input[type=text] {
+    height: 2.5rem;
+    width: 15rem;
+    background: #ffffff;
+    border: 0.1rem solid #aaaaaa;
+    border-radius: 0.2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+content .sdk-wrap input[type=button] {
+    height: 2.5rem;
+    width: 5rem;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    border: none;
+    color:#FFFDF9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+content .sdk-wrap input[type=button].btn-set {
+    background-color: #589acc;
+}
+
+content .sdk-wrap input[type=button].btn-set:hover {
+    background-color: #338ed4;
+}
+
+content .sdk-wrap input[type=button].btn-set:active {
+    background-color: #2b72a8;
+}
+
+content .sdk-wrap input[type=button].btn-clear {
+    background-color: #d87348;
+}
+
+content .sdk-wrap input[type=button].btn-clear:hover {
+    background-color: #de5d26;
+}
+
+content .sdk-wrap input[type=button].btn-clear:active {
+    background-color: #b14d22;
+}

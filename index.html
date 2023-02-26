@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M744DVR');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <!-- End Google Fonts -->
+
+    <!-- Crisp -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e93e073a-1f69-4cbc-8934-f9e1611e65bb";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- End Crisp -->
+
+    <!-- Style -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- End Style -->
+
+    <script>
+        function crispSet(btnId) {
+            let inputId = btnId.split("_").pop();
+            let inputValue = document.getElementById(inputId).value;
+
+            switch (inputId) {
+            case 'user-email':
+                $crisp.push(["set", "user:email", [inputValue]]);
+                console.log($crisp.get("user:email"));
+                break;
+            case 'user-nickname':
+                $crisp.push(["set", "user:nickname", [inputValue]]);
+                console.log($crisp.get("user:nickname"));
+                break;
+            case 'user-avatar':
+                $crisp.push(["set", "user:avatar", [inputValue]]);
+                console.log($crisp.get("user:avatar"));
+                break;
+            case 'user-phone':
+                $crisp.push(["set", "user:phone", [inputValue]]);
+                console.log($crisp.get("user:phone"));
+                break;
+            case 'user-company':
+            case 'session-data':
+            case 'session-segment':
+                $crisp.push(["set", "session:segments", [[inputValue]]]);
+                break;
+            case 'session-event':
+                $crisp.push(["set", "session:event", [inputValue]]);
+                break;
+            default:
+                console.log(`${inputValue} does not exist.`);
+            }
+        }
+    </script>
+</head>
+<body>
+   <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M744DVR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <img src="/img/crisp-red.png" id="crisp-red">
+        <h1>chrisp staging</h1>
+    </header>
+
+    <content>
+        <div class="sdk-wrap">
+            <label for="user-email">email</label>
+            <input name="user-email" id="user-email" value="" type="text">
+            <input name="set_user-email" id="set_user-email" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_user-email" id="clear_user-email" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="user-nickname">nickname</label>
+            <input name="user-nickname" id="user-nickname" value="" type="text">
+            <input name="set_user-nickname" id="set_user-nickname" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_user-nickname" id="clear_user-nickname" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="user-avatar">avatar</label>
+            <input name="user-avatar" id="user-avatar" value="" type="text">
+            <input name="set_user-avatar" id="set_user-avatar" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_user-avatar" id="clear_user-avatar" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="user-phone">phone</label>
+            <input name="user-phone" id="user-phone" value="" type="text">
+            <input name="set_user-phone" id="set_user-phone" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_user-phone" id="clear_user-phone" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="user-company">company</label>
+            <input name="user-company" id="user-company" value="" type="text">
+            <input name="set_user-company" id="set_user-company" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_user-company" id="clear_user-company" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="session-data">data</label>
+            <input name="session-data" id="session-data" value="" type="text">
+            <input name="set_session-data" id="set_session-data" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_session-data" id="session-data" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="session-segment">segment</label>
+            <input name="session-segment" id="session-segment" value="" type="text">
+            <input name="set_session-segment" id="set_session-segment" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_session-segment" id="clear_session-segment" class="btn-clear" value="CLEAR" type="button">
+        </div>
+
+        <div class="sdk-wrap">
+            <label for="session-event">event</label>
+            <input name="session-event" id="session-event" value="" type="text">
+            <input name="set_session-event" id="set_session-event" class="btn-set" value="SET" type="button" onclick="crispSet(this.id)">
+            <input name="clear_session-event" id="clear_session-event" class="btn-clear" value="CLEAR" type="button">
+        </div>
+    </content>
+
+    <footer>
+        <p>This is a footer text. It is at the bottom of the page, where it is supposed to be. It is doing just fine here and does not need to be anywhere else.</p>
+    </footer>
+</body>
+</html>

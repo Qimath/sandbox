@@ -69,19 +69,19 @@ content .sdk-wrap label {
 
 content .sdk-wrap input[type=text] {
     height: 2rem;
-    width: 10rem;
+    width: 12rem;
     color: #ffffff;
     background: #666666;
     border: 0.1rem solid #aaaaaa;
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
     padding: 0 1rem;
     box-sizing: border-box;
 }
 
 content .sdk-wrap input[type=button] {
     height: 2rem;
-    width: 4rem;
-    border-radius: 0.2rem;
+    padding: 0 1rem;
+    border-radius: 0.1rem;
     border: none;
     color:#ffffff;
     cursor: pointer;

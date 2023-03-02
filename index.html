@@ -64,7 +64,7 @@
         function showMessage() {
             $crisp.push(["do", "message:show", ["text", "We answer within 4h"]]);
             }
-            $crisp.push(["on", "chat:opened", showMessage]);
+            $crisp.push(["on", "chat:initiated", showMessage]);
       
     </script>
 </head>

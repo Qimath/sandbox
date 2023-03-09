@@ -64,9 +64,14 @@
         function showMessage() {
             $crisp.push(["do", "message:show", ["text", "We answer within 4h"]]);
             }
-            $crisp.push(["on", "chat:initiated", showMessage]);
+            $crisp.push(["on", "chat:opened", showMessage]);
       
     </script>
+function sendEvent() {
+     $crisp.push(["set", "session:event", ["event-name"]]);
+     Syntax: $crisp.push(["set", "session:data", [event-triggered, yes]])
+ }
+$crisp.push(["on", "chat:opened", sendEvent]);
 </head>
 <body>
    <!-- Google Tag Manager (noscript) -->

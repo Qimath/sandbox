@@ -147,7 +147,7 @@ $crisp.push(["on", "chat:opened", sendEvent]);
     <script>
 var hasTouchScreen = false;
 if ("maxTouchPoints" in navigator) {
-    hasTouchScreen = navigator.maxTouchPoints = 0;
+    hasTouchScreen = navigator.maxTouchPoints < 0;
 } 
 if (hasTouchScreen) {
     console.log("Hello world!");

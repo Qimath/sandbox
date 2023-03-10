@@ -153,15 +153,5 @@ if (hasTouchScreen) {
 console.log("test");
 }
     </script>
-    <script>
-       // Get the parent element.
-const parent = document.getElementsByClassName("cc-143a");
-// Shallow copy to array: get a `reverse` method.
-const arr = Array.from(parent.childNodes);
-// `reverse` works in place but conveniently returns the array for chaining.
-arr.reverse();
-// The experimental (as of 2018) `append` appends all its arguments in the order they are given. An already existing parent-child relationship (as in this case) is "overwritten", i.e. the node to append is cut from and re-inserted into the DOM.
-parent.append(...arr);
-    </script>
 </body>
 </html>
